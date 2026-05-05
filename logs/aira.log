@@ -8935,3 +8935,157 @@ TypeError: 'NoneType' object is not callable
 2026-05-04 18:45:35.592 | INFO     | app.agents.researcher:<module>:13 - [RESEARCH] FinBERT model loaded
 2026-05-04 18:45:35.968 | INFO     | app.main:lifespan:26 - Database initialized successfully
 2026-05-04 18:45:35.969 | INFO     | app.main:lifespan:27 - AIRA application started
+2026-05-04 18:45:57.525 | INFO     | app.agents.researcher:<module>:13 - [RESEARCH] FinBERT model loaded
+2026-05-04 18:46:15.293 | INFO     | app.workers.tasks:run_analysis:51 - [TASK] Starting job d2dd6319-2dc5-4c22-97e7-973f6eb2bfc1 for AAPL
+2026-05-04 18:46:15.298 | INFO     | app.services.analysis_service:run_full_analysis:15 - [ANALYSIS] Starting analysis for AAPL
+2026-05-04 18:46:15.298 | INFO     | app.services.analysis_service:run_full_analysis:25 - [ANALYSIS] Research plan created
+2026-05-04 18:46:15.298 | INFO     | app.agents.researcher:gather_research:69 - [RESEARCH] Starting research for AAPL
+2026-05-04 18:46:15.302 | INFO     | app.mcp.tool_router:call_tool:28 - [MCP] → Calling 'finance_api' with params={'ticker': 'AAPL'}
+2026-05-04 18:46:15.302 | INFO     | app.tools.finance_api:get_financial_data:9 - Fetching financial data for AAPL
+2026-05-04 18:46:16.489 | INFO     | app.mcp.tool_router:call_tool:34 - [MCP] ← 'finance_api' completed in 1.187s
+2026-05-04 18:46:16.490 | INFO     | app.agents.researcher:gather_research:75 - [RESEARCH] Financial data fetched via MCP
+2026-05-04 18:46:16.490 | INFO     | app.mcp.tool_router:call_tool:28 - [MCP] → Calling 'news_api' with params={'company': 'Apple Inc.'}
+2026-05-04 18:46:16.490 | INFO     | app.tools.news_api:get_company_news:10 - Fetching news for Apple Inc.
+2026-05-04 18:46:16.795 | INFO     | app.mcp.tool_router:call_tool:34 - [MCP] ← 'news_api' completed in 0.305s
+2026-05-04 18:46:16.795 | INFO     | app.agents.researcher:gather_research:87 - [RESEARCH] Retrieved 5 news articles via MCP
+2026-05-04 18:46:16.795 | INFO     | app.mcp.tool_router:call_tool:28 - [MCP] → Calling 'sec_api' with params={'ticker': 'AAPL'}
+2026-05-04 18:46:16.795 | INFO     | app.mcp.tool_router:call_tool:34 - [MCP] ← 'sec_api' completed in 0.0s
+2026-05-04 18:46:16.795 | INFO     | app.agents.researcher:gather_research:94 - [RESEARCH] SEC filings fetched via MCP
+2026-05-04 18:46:17.076 | INFO     | app.agents.researcher:gather_research:104 - [RESEARCH] Sentiment score: 0.0
+2026-05-04 18:46:17.076 | INFO     | app.services.analysis_service:run_full_analysis:28 - [ANALYSIS] Research gathered
+2026-05-04 18:46:20.862 | INFO     | app.services.analysis_service:run_full_analysis:31 - [ANALYSIS] Synthesis complete
+2026-05-04 18:46:20.862 | INFO     | app.services.analysis_service:run_full_analysis:34 - [ANALYSIS] Reflection complete
+2026-05-04 18:46:20.863 | INFO     | app.services.analysis_service:run_full_analysis:48 - [CACHE] Stored result for AAPL
+2026-05-04 18:46:20.863 | INFO     | app.services.analysis_service:run_full_analysis:50 - [ANALYSIS] Completed for AAPL
+2026-05-04 18:46:20.863 | INFO     | app.workers.tasks:run_analysis:64 - [TASK] Result ready for job d2dd6319-2dc5-4c22-97e7-973f6eb2bfc1
+2026-05-04 18:46:20.870 | INFO     | app.workers.tasks:run_analysis:72 - [TASK] Job d2dd6319-2dc5-4c22-97e7-973f6eb2bfc1 completed successfully
+2026-05-04 18:47:31.903 | INFO     | app.workers.tasks:run_analysis:51 - [TASK] Starting job 40ac01fd-0d0d-48d2-9e2c-d47b31d1ea7b for META
+2026-05-04 18:47:31.906 | INFO     | app.services.analysis_service:run_full_analysis:15 - [ANALYSIS] Starting analysis for META
+2026-05-04 18:47:31.907 | INFO     | app.services.analysis_service:run_full_analysis:25 - [ANALYSIS] Research plan created
+2026-05-04 18:47:31.907 | INFO     | app.agents.researcher:gather_research:69 - [RESEARCH] Starting research for META
+2026-05-04 18:47:31.908 | INFO     | app.mcp.tool_router:call_tool:28 - [MCP] → Calling 'finance_api' with params={'ticker': 'META'}
+2026-05-04 18:47:31.908 | INFO     | app.tools.finance_api:get_financial_data:9 - Fetching financial data for META
+2026-05-04 18:47:32.402 | INFO     | app.mcp.tool_router:call_tool:34 - [MCP] ← 'finance_api' completed in 0.494s
+2026-05-04 18:47:32.402 | INFO     | app.agents.researcher:gather_research:75 - [RESEARCH] Financial data fetched via MCP
+2026-05-04 18:47:32.402 | INFO     | app.mcp.tool_router:call_tool:28 - [MCP] → Calling 'news_api' with params={'company': 'Meta Platforms, Inc.'}
+2026-05-04 18:47:32.402 | INFO     | app.tools.news_api:get_company_news:10 - Fetching news for Meta Platforms, Inc.
+2026-05-04 18:47:32.826 | INFO     | app.mcp.tool_router:call_tool:34 - [MCP] ← 'news_api' completed in 0.424s
+2026-05-04 18:47:32.826 | INFO     | app.agents.researcher:gather_research:87 - [RESEARCH] Retrieved 5 news articles via MCP
+2026-05-04 18:47:32.827 | INFO     | app.mcp.tool_router:call_tool:28 - [MCP] → Calling 'sec_api' with params={'ticker': 'META'}
+2026-05-04 18:47:32.827 | INFO     | app.mcp.tool_router:call_tool:34 - [MCP] ← 'sec_api' completed in 0.0s
+2026-05-04 18:47:32.827 | INFO     | app.agents.researcher:gather_research:94 - [RESEARCH] SEC filings fetched via MCP
+2026-05-04 18:47:33.143 | INFO     | app.agents.researcher:gather_research:104 - [RESEARCH] Sentiment score: 0.2
+2026-05-04 18:47:33.143 | INFO     | app.services.analysis_service:run_full_analysis:28 - [ANALYSIS] Research gathered
+2026-05-04 18:47:35.820 | INFO     | app.services.analysis_service:run_full_analysis:31 - [ANALYSIS] Synthesis complete
+2026-05-04 18:47:35.820 | INFO     | app.services.analysis_service:run_full_analysis:34 - [ANALYSIS] Reflection complete
+2026-05-04 18:47:35.820 | INFO     | app.services.analysis_service:run_full_analysis:48 - [CACHE] Stored result for META
+2026-05-04 18:47:35.823 | INFO     | app.services.analysis_service:run_full_analysis:50 - [ANALYSIS] Completed for META
+2026-05-04 18:47:35.824 | INFO     | app.workers.tasks:run_analysis:64 - [TASK] Result ready for job 40ac01fd-0d0d-48d2-9e2c-d47b31d1ea7b
+2026-05-04 18:47:35.828 | INFO     | app.workers.tasks:run_analysis:72 - [TASK] Job 40ac01fd-0d0d-48d2-9e2c-d47b31d1ea7b completed successfully
+2026-05-04 18:47:38.330 | INFO     | app.workers.tasks:run_analysis:51 - [TASK] Starting job b1c34490-03c9-4c17-935f-24488dad341e for TSLA
+2026-05-04 18:47:38.330 | INFO     | app.services.analysis_service:run_full_analysis:15 - [ANALYSIS] Starting analysis for TSLA
+2026-05-04 18:47:38.336 | INFO     | app.services.analysis_service:run_full_analysis:25 - [ANALYSIS] Research plan created
+2026-05-04 18:47:38.336 | INFO     | app.agents.researcher:gather_research:69 - [RESEARCH] Starting research for TSLA
+2026-05-04 18:47:38.336 | INFO     | app.mcp.tool_router:call_tool:28 - [MCP] → Calling 'finance_api' with params={'ticker': 'TSLA'}
+2026-05-04 18:47:38.337 | INFO     | app.tools.finance_api:get_financial_data:9 - Fetching financial data for TSLA
+2026-05-04 18:47:38.893 | INFO     | app.mcp.tool_router:call_tool:34 - [MCP] ← 'finance_api' completed in 0.557s
+2026-05-04 18:47:38.893 | INFO     | app.agents.researcher:gather_research:75 - [RESEARCH] Financial data fetched via MCP
+2026-05-04 18:47:38.893 | INFO     | app.mcp.tool_router:call_tool:28 - [MCP] → Calling 'news_api' with params={'company': 'Tesla, Inc.'}
+2026-05-04 18:47:38.893 | INFO     | app.tools.news_api:get_company_news:10 - Fetching news for Tesla, Inc.
+2026-05-04 18:47:39.316 | INFO     | app.mcp.tool_router:call_tool:34 - [MCP] ← 'news_api' completed in 0.423s
+2026-05-04 18:47:39.316 | INFO     | app.agents.researcher:gather_research:87 - [RESEARCH] Retrieved 5 news articles via MCP
+2026-05-04 18:47:39.316 | INFO     | app.mcp.tool_router:call_tool:28 - [MCP] → Calling 'sec_api' with params={'ticker': 'TSLA'}
+2026-05-04 18:47:39.317 | INFO     | app.mcp.tool_router:call_tool:34 - [MCP] ← 'sec_api' completed in 0.001s
+2026-05-04 18:47:39.317 | INFO     | app.agents.researcher:gather_research:94 - [RESEARCH] SEC filings fetched via MCP
+2026-05-04 18:47:39.578 | INFO     | app.agents.researcher:gather_research:104 - [RESEARCH] Sentiment score: 0.2
+2026-05-04 18:47:39.578 | INFO     | app.services.analysis_service:run_full_analysis:28 - [ANALYSIS] Research gathered
+2026-05-04 18:47:41.558 | INFO     | app.services.analysis_service:run_full_analysis:31 - [ANALYSIS] Synthesis complete
+2026-05-04 18:47:41.559 | INFO     | app.services.analysis_service:run_full_analysis:34 - [ANALYSIS] Reflection complete
+2026-05-04 18:47:41.559 | INFO     | app.services.analysis_service:run_full_analysis:48 - [CACHE] Stored result for TSLA
+2026-05-04 18:47:41.559 | INFO     | app.services.analysis_service:run_full_analysis:50 - [ANALYSIS] Completed for TSLA
+2026-05-04 18:47:41.560 | INFO     | app.workers.tasks:run_analysis:64 - [TASK] Result ready for job b1c34490-03c9-4c17-935f-24488dad341e
+2026-05-04 18:47:41.561 | INFO     | app.workers.tasks:run_analysis:72 - [TASK] Job b1c34490-03c9-4c17-935f-24488dad341e completed successfully
+2026-05-04 18:56:43.902 | INFO     | app.workers.tasks:run_analysis:51 - [TASK] Starting job 2feaefaf-7caf-4d42-b51b-116759532ac8 for AAPL
+2026-05-04 18:56:43.910 | INFO     | app.services.analysis_service:run_full_analysis:15 - [ANALYSIS] Starting analysis for AAPL
+2026-05-04 18:56:43.911 | INFO     | app.services.analysis_service:run_full_analysis:25 - [ANALYSIS] Research plan created
+2026-05-04 18:56:43.911 | INFO     | app.agents.researcher:gather_research:69 - [RESEARCH] Starting research for AAPL
+2026-05-04 18:56:43.912 | INFO     | app.mcp.tool_router:call_tool:28 - [MCP] → Calling 'finance_api' with params={'ticker': 'AAPL'}
+2026-05-04 18:56:43.912 | INFO     | app.tools.finance_api:get_financial_data:9 - Fetching financial data for AAPL
+2026-05-04 18:56:44.712 | INFO     | app.mcp.tool_router:call_tool:34 - [MCP] ← 'finance_api' completed in 0.8s
+2026-05-04 18:56:44.712 | INFO     | app.agents.researcher:gather_research:75 - [RESEARCH] Financial data fetched via MCP
+2026-05-04 18:56:44.712 | INFO     | app.mcp.tool_router:call_tool:28 - [MCP] → Calling 'news_api' with params={'company': 'Apple Inc.'}
+2026-05-04 18:56:44.712 | INFO     | app.tools.news_api:get_company_news:10 - Fetching news for Apple Inc.
+2026-05-04 18:56:45.484 | INFO     | app.mcp.tool_router:call_tool:34 - [MCP] ← 'news_api' completed in 0.772s
+2026-05-04 18:56:45.484 | INFO     | app.agents.researcher:gather_research:87 - [RESEARCH] Retrieved 5 news articles via MCP
+2026-05-04 18:56:45.486 | INFO     | app.mcp.tool_router:call_tool:28 - [MCP] → Calling 'sec_api' with params={'ticker': 'AAPL'}
+2026-05-04 18:56:45.486 | INFO     | app.mcp.tool_router:call_tool:34 - [MCP] ← 'sec_api' completed in 0.002s
+2026-05-04 18:56:45.486 | INFO     | app.agents.researcher:gather_research:94 - [RESEARCH] SEC filings fetched via MCP
+2026-05-04 18:56:45.907 | INFO     | app.agents.researcher:gather_research:104 - [RESEARCH] Sentiment score: 0.0
+2026-05-04 18:56:45.909 | INFO     | app.services.analysis_service:run_full_analysis:28 - [ANALYSIS] Research gathered
+2026-05-04 18:56:48.149 | INFO     | app.services.analysis_service:run_full_analysis:31 - [ANALYSIS] Synthesis complete
+2026-05-04 18:56:48.149 | INFO     | app.services.analysis_service:run_full_analysis:34 - [ANALYSIS] Reflection complete
+2026-05-04 18:56:48.149 | INFO     | app.services.analysis_service:run_full_analysis:48 - [CACHE] Stored result for AAPL
+2026-05-04 18:56:48.149 | INFO     | app.services.analysis_service:run_full_analysis:50 - [ANALYSIS] Completed for AAPL
+2026-05-04 18:56:48.149 | INFO     | app.workers.tasks:run_analysis:64 - [TASK] Result ready for job 2feaefaf-7caf-4d42-b51b-116759532ac8
+2026-05-04 18:56:48.149 | INFO     | app.workers.tasks:run_analysis:72 - [TASK] Job 2feaefaf-7caf-4d42-b51b-116759532ac8 completed successfully
+2026-05-04 18:56:55.670 | INFO     | app.workers.tasks:run_analysis:51 - [TASK] Starting job 3594a9eb-941e-461a-89a6-af9004e18760 for TSLA
+2026-05-04 18:56:55.673 | INFO     | app.services.analysis_service:run_full_analysis:15 - [ANALYSIS] Starting analysis for TSLA
+2026-05-04 18:56:55.673 | INFO     | app.services.analysis_service:run_full_analysis:25 - [ANALYSIS] Research plan created
+2026-05-04 18:56:55.674 | INFO     | app.agents.researcher:gather_research:69 - [RESEARCH] Starting research for TSLA
+2026-05-04 18:56:55.675 | INFO     | app.mcp.tool_router:call_tool:28 - [MCP] → Calling 'finance_api' with params={'ticker': 'TSLA'}
+2026-05-04 18:56:55.676 | INFO     | app.tools.finance_api:get_financial_data:9 - Fetching financial data for TSLA
+2026-05-04 18:56:56.035 | INFO     | app.mcp.tool_router:call_tool:34 - [MCP] ← 'finance_api' completed in 0.36s
+2026-05-04 18:56:56.035 | INFO     | app.agents.researcher:gather_research:75 - [RESEARCH] Financial data fetched via MCP
+2026-05-04 18:56:56.035 | INFO     | app.mcp.tool_router:call_tool:28 - [MCP] → Calling 'news_api' with params={'company': 'Tesla, Inc.'}
+2026-05-04 18:56:56.035 | INFO     | app.tools.news_api:get_company_news:10 - Fetching news for Tesla, Inc.
+2026-05-04 18:56:56.805 | INFO     | app.mcp.tool_router:call_tool:34 - [MCP] ← 'news_api' completed in 0.769s
+2026-05-04 18:56:56.805 | INFO     | app.agents.researcher:gather_research:87 - [RESEARCH] Retrieved 5 news articles via MCP
+2026-05-04 18:56:56.805 | INFO     | app.mcp.tool_router:call_tool:28 - [MCP] → Calling 'sec_api' with params={'ticker': 'TSLA'}
+2026-05-04 18:56:56.807 | INFO     | app.mcp.tool_router:call_tool:34 - [MCP] ← 'sec_api' completed in 0.002s
+2026-05-04 18:56:56.807 | INFO     | app.agents.researcher:gather_research:94 - [RESEARCH] SEC filings fetched via MCP
+2026-05-04 18:56:57.069 | INFO     | app.agents.researcher:gather_research:104 - [RESEARCH] Sentiment score: 0.2
+2026-05-04 18:56:57.069 | INFO     | app.services.analysis_service:run_full_analysis:28 - [ANALYSIS] Research gathered
+2026-05-04 18:56:59.129 | INFO     | app.services.analysis_service:run_full_analysis:31 - [ANALYSIS] Synthesis complete
+2026-05-04 18:56:59.129 | INFO     | app.services.analysis_service:run_full_analysis:34 - [ANALYSIS] Reflection complete
+2026-05-04 18:56:59.129 | INFO     | app.services.analysis_service:run_full_analysis:48 - [CACHE] Stored result for TSLA
+2026-05-04 18:56:59.129 | INFO     | app.services.analysis_service:run_full_analysis:50 - [ANALYSIS] Completed for TSLA
+2026-05-04 18:56:59.129 | INFO     | app.workers.tasks:run_analysis:64 - [TASK] Result ready for job 3594a9eb-941e-461a-89a6-af9004e18760
+2026-05-04 18:56:59.140 | INFO     | app.workers.tasks:run_analysis:72 - [TASK] Job 3594a9eb-941e-461a-89a6-af9004e18760 completed successfully
+2026-05-04 18:57:05.012 | INFO     | app.workers.tasks:run_analysis:51 - [TASK] Starting job a4142657-6226-4972-845e-be99788b72d3 for META
+2026-05-04 18:57:05.017 | INFO     | app.services.analysis_service:run_full_analysis:15 - [ANALYSIS] Starting analysis for META
+2026-05-04 18:57:05.017 | INFO     | app.services.analysis_service:run_full_analysis:25 - [ANALYSIS] Research plan created
+2026-05-04 18:57:05.017 | INFO     | app.agents.researcher:gather_research:69 - [RESEARCH] Starting research for META
+2026-05-04 18:57:05.017 | INFO     | app.mcp.tool_router:call_tool:28 - [MCP] → Calling 'finance_api' with params={'ticker': 'META'}
+2026-05-04 18:57:05.017 | INFO     | app.tools.finance_api:get_financial_data:9 - Fetching financial data for META
+2026-05-04 18:57:05.322 | INFO     | app.mcp.tool_router:call_tool:34 - [MCP] ← 'finance_api' completed in 0.305s
+2026-05-04 18:57:05.322 | INFO     | app.agents.researcher:gather_research:75 - [RESEARCH] Financial data fetched via MCP
+2026-05-04 18:57:05.323 | INFO     | app.mcp.tool_router:call_tool:28 - [MCP] → Calling 'news_api' with params={'company': 'Meta Platforms, Inc.'}
+2026-05-04 18:57:05.323 | INFO     | app.tools.news_api:get_company_news:10 - Fetching news for Meta Platforms, Inc.
+2026-05-04 18:57:05.926 | INFO     | app.mcp.tool_router:call_tool:34 - [MCP] ← 'news_api' completed in 0.603s
+2026-05-04 18:57:05.927 | INFO     | app.agents.researcher:gather_research:87 - [RESEARCH] Retrieved 5 news articles via MCP
+2026-05-04 18:57:05.927 | INFO     | app.mcp.tool_router:call_tool:28 - [MCP] → Calling 'sec_api' with params={'ticker': 'META'}
+2026-05-04 18:57:05.928 | INFO     | app.mcp.tool_router:call_tool:34 - [MCP] ← 'sec_api' completed in 0.001s
+2026-05-04 18:57:05.928 | INFO     | app.agents.researcher:gather_research:94 - [RESEARCH] SEC filings fetched via MCP
+2026-05-04 18:57:06.223 | INFO     | app.agents.researcher:gather_research:104 - [RESEARCH] Sentiment score: 0.2
+2026-05-04 18:57:06.223 | INFO     | app.services.analysis_service:run_full_analysis:28 - [ANALYSIS] Research gathered
+2026-05-04 18:57:08.779 | INFO     | app.services.analysis_service:run_full_analysis:31 - [ANALYSIS] Synthesis complete
+2026-05-04 18:57:08.779 | INFO     | app.services.analysis_service:run_full_analysis:34 - [ANALYSIS] Reflection complete
+2026-05-04 18:57:08.779 | INFO     | app.services.analysis_service:run_full_analysis:48 - [CACHE] Stored result for META
+2026-05-04 18:57:08.783 | INFO     | app.services.analysis_service:run_full_analysis:50 - [ANALYSIS] Completed for META
+2026-05-04 18:57:08.783 | INFO     | app.workers.tasks:run_analysis:64 - [TASK] Result ready for job a4142657-6226-4972-845e-be99788b72d3
+2026-05-04 18:57:08.790 | INFO     | app.workers.tasks:run_analysis:72 - [TASK] Job a4142657-6226-4972-845e-be99788b72d3 completed successfully
+2026-05-04 18:57:12.260 | INFO     | app.workers.tasks:run_analysis:51 - [TASK] Starting job 3b5dbe18-5a2b-4a9c-b2cd-7c29a927b01c for AAPL
+2026-05-04 18:57:12.263 | INFO     | app.services.analysis_service:run_full_analysis:15 - [ANALYSIS] Starting analysis for AAPL
+2026-05-04 18:57:12.264 | INFO     | app.services.analysis_service:run_full_analysis:21 - [CACHE] Returning cached result for AAPL
+2026-05-04 18:57:12.264 | INFO     | app.workers.tasks:run_analysis:64 - [TASK] Result ready for job 3b5dbe18-5a2b-4a9c-b2cd-7c29a927b01c
+2026-05-04 18:57:12.267 | INFO     | app.workers.tasks:run_analysis:72 - [TASK] Job 3b5dbe18-5a2b-4a9c-b2cd-7c29a927b01c completed successfully
+2026-05-04 18:57:13.281 | INFO     | app.workers.tasks:run_analysis:51 - [TASK] Starting job 413e304a-6b6f-4fae-a546-ddff7d92a8d3 for TSLA
+2026-05-04 18:57:13.283 | INFO     | app.services.analysis_service:run_full_analysis:15 - [ANALYSIS] Starting analysis for TSLA
+2026-05-04 18:57:13.283 | INFO     | app.services.analysis_service:run_full_analysis:21 - [CACHE] Returning cached result for TSLA
+2026-05-04 18:57:13.283 | INFO     | app.workers.tasks:run_analysis:64 - [TASK] Result ready for job 413e304a-6b6f-4fae-a546-ddff7d92a8d3
+2026-05-04 18:57:13.283 | INFO     | app.workers.tasks:run_analysis:72 - [TASK] Job 413e304a-6b6f-4fae-a546-ddff7d92a8d3 completed successfully
+2026-05-04 18:57:14.293 | INFO     | app.workers.tasks:run_analysis:51 - [TASK] Starting job 0afa5ecd-5e71-40d3-b0dc-ad586c642035 for META
+2026-05-04 18:57:14.300 | INFO     | app.services.analysis_service:run_full_analysis:15 - [ANALYSIS] Starting analysis for META
+2026-05-04 18:57:14.303 | INFO     | app.services.analysis_service:run_full_analysis:21 - [CACHE] Returning cached result for META
+2026-05-04 18:57:14.303 | INFO     | app.workers.tasks:run_analysis:64 - [TASK] Result ready for job 0afa5ecd-5e71-40d3-b0dc-ad586c642035
+2026-05-04 18:57:14.303 | INFO     | app.workers.tasks:run_analysis:72 - [TASK] Job 0afa5ecd-5e71-40d3-b0dc-ad586c642035 completed successfully

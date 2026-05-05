@@ -1,10 +1,112 @@
-# Python-generated files
+# =========================
+# Python
+# =========================
 __pycache__/
-*.py[oc]
-build/
-dist/
-wheels/
-*.egg-info
+*.py[cod]
+*$py.class
+*.so
 
 # Virtual environments
-.venv
+.venv/
+venv/
+env/
+ENV/
+
+# =========================
+# Environment variables
+# =========================
+.env
+.env.*
+*.env
+
+# =========================
+# Logs
+# =========================
+logs/
+*.log
+
+# =========================
+# Database
+# =========================
+*.db
+*.sqlite3
+*.sqlite
+
+# =========================
+# Cache / Temporary
+# =========================
+.cache/
+pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+
+# =========================
+# Build / Distribution
+# =========================
+build/
+dist/
+*.egg-info/
+
+# =========================
+# IDEs / Editors
+# =========================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# =========================
+# OS files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Celery
+# =========================
+celerybeat-schedule
+celerybeat.pid
+
+# =========================
+# Streamlit
+# =========================
+.streamlit/
+
+# =========================
+# ML / Models
+# =========================
+models/
+*.pt
+*.pth
+*.h5
+*.onnx
+
+# =========================
+# Reports / Outputs
+# =========================
+reports/
+*.pdf
+*.csv
+
+# =========================
+# Docker
+# =========================
+*.tar
+
+# =========================
+# Prometheus / Monitoring
+# =========================
+prometheus_data/
+*.prom
+
+# =========================
+# Testing
+# =========================
+.coverage
+htmlcov/
+
+# =========================
+# Misc
+# =========================
+*.bak
+*.tmp
