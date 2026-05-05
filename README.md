@@ -1,8 +1,8 @@
 # 🚀 A.I.R.A. — Autonomous Investment Research Agent
 
-> **A production-grade, AI-powered backend system designed to autonomously analyze publicly traded companies and generate structured, explainable, and data-driven investment reports.**
+> **A production-grade, AI-powered backend system designed to autonomously analyze publicly traded companies and generate structured, explainable, and uncertainty-aware investment reports.**
 
-A.I.R.A. showcases **agentic reasoning, asynchronous execution, multi-source data integration, and hybrid AI (ML + LLM)** — mirroring real-world decision intelligence systems used in AI-first organizations.
+A.I.R.A. showcases **agentic reasoning, asynchronous execution, multi-source data integration, hybrid AI (ML + LLM), and production-level observability** — reflecting real-world decision intelligence systems used in AI-first organizations.
 
 ---
 
@@ -13,6 +13,7 @@ A.I.R.A. showcases **agentic reasoning, asynchronous execution, multi-source dat
 - [System Architecture](#system-architecture)
 - [Core Components](#core-components)
 - [Agentic Workflow](#agentic-workflow)
+- [Features](#features)
 - [Hybrid AI Strategy](#hybrid-ai-strategy)
 - [Example Output](#example-output)
 - [Observability](#observability-prometheus)
@@ -20,6 +21,7 @@ A.I.R.A. showcases **agentic reasoning, asynchronous execution, multi-source dat
 - [How to Run](#how-to-run)
 - [Testing](#testing)
 - [Key Design Decisions](#key-design-decisions)
+- [Trade-offs & Known Limitations](#trade-offs--known-limitations)
 - [What This Demonstrates](#what-this-demonstrates)
 - [Author](#author)
 
@@ -27,7 +29,15 @@ A.I.R.A. showcases **agentic reasoning, asynchronous execution, multi-source dat
 
 ## Overview
 
-A.I.R.A. is built to function as an intelligent investment analyst. Given a stock ticker, the system autonomously orchestrates a multi-agent pipeline to collect financial data, apply sentiment analysis, generate a reasoning-backed investment thesis, and reflect on output quality — all delivered as a structured JSON report accessible via REST API.
+A.I.R.A. functions as an autonomous financial analyst. Given a stock ticker, it orchestrates a multi-agent pipeline to:
+
+- Collect financial + market data
+- Analyze sentiment with domain-specific ML
+- Generate a reasoning-backed investment thesis
+- Evaluate confidence and model uncertainty
+- Reflect and self-correct outputs
+
+All results are returned as **structured, explainable JSON** accessible via REST API.
 
 ---
 
@@ -42,7 +52,7 @@ A.I.R.A. is built to function as an intelligent investment analyst. Given a stoc
 ### Distributed Processing
 | Technology | Role |
 |---|---|
-| **Celery** | Asynchronous job execution |
+| **Celery** | Asynchronous job execution + scheduled analysis |
 | **Redis** | Message broker & task queue |
 
 ### Database
@@ -53,8 +63,9 @@ A.I.R.A. is built to function as an intelligent investment analyst. Given a stoc
 ### AI / ML
 | Technology | Role |
 |---|---|
-| **FinBERT (HuggingFace Transformers)** | Domain-specific sentiment analysis |
+| **FinBERT (HuggingFace Transformers)** | Domain-specific financial sentiment analysis |
 | **OpenAI GPT (LLM)** | Reasoning, synthesis, and thesis generation |
+| **Rule-based scoring** | Deterministic confidence and signal computation |
 
 ### Agent Orchestration
 | Technology | Role |
@@ -105,6 +116,7 @@ External Data Sources (Finance / News / SEC)
 - Handles long-running analysis tasks
 - Supports retries, backoff, and fault tolerance
 - Ensures non-blocking API performance
+- Runs scheduled proactive analysis via **Celery Beat**
 
 ### 3. Agentic Pipeline
 
@@ -112,7 +124,7 @@ External Data Sources (Finance / News / SEC)
 |---|---|
 | **Planner** | Decomposes the problem and defines required data |
 | **Researcher** | Retrieves structured + unstructured data via MCP |
-| **Synthesizer** | Generates signal, confidence, and reasoning |
+| **Synthesizer** | Generates signal, confidence, uncertainty, and reasoning |
 | **Reflector** | Evaluates output quality and adjusts confidence |
 
 ### 4. MCP (Model Context Protocol)
@@ -145,35 +157,71 @@ Fetches:
 - Market news
 - SEC filings
 
-Applies **FinBERT** for sentiment scoring
+Applies **FinBERT** for domain-accurate sentiment scoring
 
 ### 3. Synthesis
 Combines structured + unstructured inputs and produces:
 - **Signal** → Bullish / Bearish / Neutral
-- **Confidence Score**
+- **Confidence Score** + **Uncertainty Score**
+- **Data Quality Score**
 - **Investment Thesis** (LLM-generated)
 
 ### 4. Reflection
-- Evaluates data completeness and signal strength
-- Adjusts confidence dynamically
-- Adds transparency notes
+- Multi-factor evaluation of data completeness and signal strength
+- Dynamically adjusts confidence based on quality signals
+- Appends transparency and reasoning notes
 
 ---
 
-## 🤖 Hybrid AI Strategy
+## ✨ Features
+
+### ✅ Uncertainty Modeling
+Confidence is paired with an explicit uncertainty score, giving consumers a full picture of signal reliability:
+```json
+"confidence": 0.42,
+"uncertainty": 0.58
+```
+
+### ✅ Data Quality Scoring
+Each report includes a composite data quality score based on:
+- News article volume
+- Financial metric availability
+- SEC filing presence
+
+### ✅ Reflection System
+The Reflector evaluates four dimensions before finalizing output:
+- Data completeness
+- Sentiment signal strength
+- Valuation risk
+- Source coverage
+
+### ✅ TTL-Based Caching
+Avoids redundant analysis for recently processed tickers, reducing latency and external API cost.
+
+### ✅ Proactive Scheduled Analysis
+Celery Beat triggers daily background analysis jobs, enabling continuous market monitoring without manual requests.
+
+### ✅ Resilient Failure Handling
+- Per-source API fallbacks
+- Retry mechanisms with exponential backoff
+- Partial-data resilience — the pipeline continues even when one source is unavailable
+
+---
+
+## 🧬 Hybrid AI Strategy
 
 A.I.R.A. combines **deterministic logic + ML + LLM**:
 
 | Layer | Role |
 |---|---|
-| **FinBERT** | Extracts structured sentiment from news |
-| **Rule-based logic** | Computes signals and confidence |
-| **LLM (GPT)** | Generates reasoning and thesis |
+| **FinBERT** | Extracts structured sentiment from financial news |
+| **Rule-based logic** | Computes signals, confidence, and uncertainty |
+| **LLM (GPT)** | Generates human-readable reasoning and thesis |
 
 **Why this matters:**
-- Reliable signal extraction
-- Human-like reasoning
-- Explainable decisions
+- Reliable, auditable signal extraction
+- Human-like reasoning without hallucinated numbers
+- Fully explainable decisions at every layer
 
 ---
 
@@ -183,20 +231,16 @@ A.I.R.A. combines **deterministic logic + ML + LLM**:
 {
   "company": "Apple Inc.",
   "ticker": "AAPL",
-  "thesis": "Apple demonstrates strong fundamentals supported by positive sentiment and consistent revenue growth",
   "signal": "Bullish",
   "confidence": 0.42,
+  "uncertainty": 0.58,
+  "data_quality": 0.7,
   "insights": [
-    "P/E Ratio: 33.5",
-    "Revenue Growth: 0.16",
+    "P/E Ratio: 33",
+    "Revenue Growth: 0.12",
     "Sentiment Score: 0.3"
   ],
   "sources": ["Yahoo Finance", "NewsAPI", "SEC Filings"],
-  "reasoning": {
-    "sentiment": 0.3,
-    "growth": 0.16,
-    "valuation": 33.5
-  },
   "reflection_notes": [
     "Moderate confidence due to limited sentiment coverage"
   ]
@@ -272,7 +316,13 @@ uvicorn app.main:app --reload
 celery -A app.core.celery_app.celery worker --pool=solo --loglevel=info
 ```
 
-### 6. Access API
+### 6. Start Celery Beat (scheduler)
+
+```bash
+celery -A app.core.celery_app.celery beat --loglevel=info
+```
+
+### 7. Access API
 
 ```
 http://127.0.0.1:8000/docs
@@ -300,29 +350,58 @@ pytest -v
 ## 🎯 Key Design Decisions
 
 ### ✅ Multi-Agent Architecture
-Improves modularity, traceability, and reasoning clarity
+Each agent has a single, well-defined responsibility — improving modularity, traceability, and reasoning clarity.
 
 ### ✅ MCP Abstraction Layer
-Decouples system from external tools
+Agents are fully decoupled from external tools, making the system extensible without touching core logic.
 
 ### ✅ Async-first Design
-Ensures scalability and responsiveness
+Celery + Redis keep the API non-blocking under load, with built-in retry and fault-tolerance.
 
 ### ✅ Explainability-first Outputs
-Every result includes reasoning and confidence
+Every result includes signal, confidence, uncertainty, data quality, and reasoning notes — nothing is a black box.
 
 ### ✅ Observability Built-in
-Prometheus metrics for real-time monitoring
+Prometheus metrics are embedded from day one, not bolted on after.
+
+---
+
+## ⚖️ Trade-offs & Known Limitations
+
+> We value clarity and judgment over completeness. Every decision below was intentional.
+
+### Trade-offs
+
+**1. Simplicity vs. Accuracy**
+- Heuristic + rule-based scoring is fast, transparent, and fully explainable
+- Accuracy improves with domain-specific ML calibration over time
+
+**2. Latency vs. Depth**
+- Lightweight analysis keeps response times low and resource costs minimal
+- Deeper contextual NLP is a natural next layer for richer signal extraction
+
+**3. Deterministic Confidence**
+- Rule-derived confidence is consistent, auditable, and free of hallucination
+- Adaptive calibration via trained ML models is a planned enhancement
+
+**4. MCP Abstraction**
+- Adds an intentional indirection layer between agents and external tools
+- Pays off immediately in modularity, testability, and long-term scalability
+
+### Known Limitations
+
+- **Snapshot-based analysis** — no live data streaming; results reflect point-in-time market state.
+- **No long-term memory** — the system does not persist or track historical trends across runs.
 
 ---
 
 ## 🧠 What This Demonstrates
 
-- Agentic system design
-- Backend architecture at scale
-- Hybrid AI integration (ML + LLM)
-- Async distributed processing
-- Production-level observability
+- Agentic system design with multi-step autonomous reasoning
+- Backend architecture at scale with async distributed processing
+- Hybrid AI integration (ML + LLM + deterministic logic)
+- Uncertainty-aware, explainable AI outputs
+- Production-level observability and failure resilience
 
 ---
 

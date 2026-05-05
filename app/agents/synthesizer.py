@@ -7,7 +7,20 @@ load_dotenv()
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 
-def generate_llm_analysis(data, signal, confidence):
+def compute_data_quality(data):
+    news_n = len(data.get("news", []))
+    has_fin = bool(data.get("financials"))
+    has_filings = bool(data.get("filings", {}).get("risk_factors"))
+
+    score = 0
+    score += min(news_n / 10, 1.0) * 0.4
+    score += (1.0 if has_fin else 0.0) * 0.3
+    score += (1.0 if has_filings else 0.0) * 0.3
+
+    return round(score, 2)
+
+
+def generate_llm_analysis(data, signal, confidence, data_quality):
     try:
         prompt = f"""
         You are a financial analyst.
@@ -19,6 +32,7 @@ def generate_llm_analysis(data, signal, confidence):
 
         Computed Signal: {signal}
         Confidence: {confidence}
+        Data Quality: {data_quality}
 
         Generate:
         1. A concise investment thesis (2-3 sentences)
@@ -33,9 +47,7 @@ def generate_llm_analysis(data, signal, confidence):
             temperature=0.3
         )
 
-        content = response.choices[0].message.content
-
-        return content
+        return response.choices[0].message.content
 
     except Exception:
         return "Analysis generated using rule-based synthesis due to LLM unavailability."
@@ -60,9 +72,15 @@ def synthesize_analysis(data):
         revenue_growth * 0.3 +
         (1 / max(pe_ratio, 1)) * 0.3
     )
+
+    data_quality = compute_data_quality(data)
+    confidence = confidence * (0.7 + 0.3 * data_quality)
+
     confidence = round(min(confidence, 1.0), 2)
 
-    llm_output = generate_llm_analysis(data, signal, confidence)
+    uncertainty = round(1 - confidence, 2)
+
+    llm_output = generate_llm_analysis(data, signal, confidence, data_quality)
 
     insights = [
         f"P/E Ratio: {pe_ratio}",
@@ -78,6 +96,8 @@ def synthesize_analysis(data):
 
         "signal": signal,
         "confidence": confidence,
+        "uncertainty": uncertainty,
+        "data_quality": data_quality,
 
         "insights": insights,
         "risks": data["filings"]["risk_factors"],
@@ -91,7 +111,8 @@ def synthesize_analysis(data):
         "reasoning": {
             "sentiment": sentiment_score,
             "growth": revenue_growth,
-            "valuation": pe_ratio
+            "valuation": pe_ratio,
+            "data_quality": data_quality
         },
 
         "agent_trace": [

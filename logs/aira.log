@@ -9089,3 +9089,556 @@ TypeError: 'NoneType' object is not callable
 2026-05-04 18:57:14.303 | INFO     | app.services.analysis_service:run_full_analysis:21 - [CACHE] Returning cached result for META
 2026-05-04 18:57:14.303 | INFO     | app.workers.tasks:run_analysis:64 - [TASK] Result ready for job 0afa5ecd-5e71-40d3-b0dc-ad586c642035
 2026-05-04 18:57:14.303 | INFO     | app.workers.tasks:run_analysis:72 - [TASK] Job 0afa5ecd-5e71-40d3-b0dc-ad586c642035 completed successfully
+2026-05-04 19:32:52.058 | INFO     | app.main:lifespan:31 - AIRA application shutting down
+2026-05-04 19:33:01.686 | INFO     | app.agents.researcher:<module>:13 - [RESEARCH] FinBERT model loaded
+2026-05-04 19:33:02.451 | INFO     | app.main:lifespan:26 - Database initialized successfully
+2026-05-04 19:33:02.451 | INFO     | app.main:lifespan:27 - AIRA application started
+2026-05-04 19:33:08.520 | INFO     | app.main:lifespan:31 - AIRA application shutting down
+2026-05-04 19:33:15.551 | INFO     | app.agents.researcher:<module>:13 - [RESEARCH] FinBERT model loaded
+2026-05-04 19:33:15.946 | INFO     | app.main:lifespan:26 - Database initialized successfully
+2026-05-04 19:33:15.946 | INFO     | app.main:lifespan:27 - AIRA application started
+2026-05-04 19:33:17.064 | INFO     | app.main:lifespan:31 - AIRA application shutting down
+2026-05-04 19:33:24.544 | INFO     | app.agents.researcher:<module>:13 - [RESEARCH] FinBERT model loaded
+2026-05-04 19:33:25.056 | INFO     | app.main:lifespan:26 - Database initialized successfully
+2026-05-04 19:33:25.057 | INFO     | app.main:lifespan:27 - AIRA application started
+2026-05-04 19:34:22.486 | INFO     | app.main:lifespan:31 - AIRA application shutting down
+2026-05-04 19:34:29.471 | INFO     | app.agents.researcher:<module>:13 - [RESEARCH] FinBERT model loaded
+2026-05-04 19:34:29.876 | INFO     | app.main:lifespan:26 - Database initialized successfully
+2026-05-04 19:34:29.877 | INFO     | app.main:lifespan:27 - AIRA application started
+2026-05-04 19:34:29.991 | INFO     | app.main:lifespan:31 - AIRA application shutting down
+2026-05-04 19:34:37.225 | INFO     | app.agents.researcher:<module>:13 - [RESEARCH] FinBERT model loaded
+2026-05-04 19:34:37.632 | INFO     | app.main:lifespan:26 - Database initialized successfully
+2026-05-04 19:34:37.632 | INFO     | app.main:lifespan:27 - AIRA application started
+2026-05-04 19:34:37.746 | INFO     | app.main:lifespan:31 - AIRA application shutting down
+2026-05-04 19:34:44.649 | INFO     | app.agents.researcher:<module>:13 - [RESEARCH] FinBERT model loaded
+2026-05-04 19:34:45.037 | INFO     | app.main:lifespan:26 - Database initialized successfully
+2026-05-04 19:34:45.038 | INFO     | app.main:lifespan:27 - AIRA application started
+2026-05-04 19:34:45.142 | INFO     | app.main:lifespan:31 - AIRA application shutting down
+2026-05-04 19:34:52.539 | INFO     | app.agents.researcher:<module>:13 - [RESEARCH] FinBERT model loaded
+2026-05-04 19:34:53.090 | INFO     | app.main:lifespan:26 - Database initialized successfully
+2026-05-04 19:34:53.090 | INFO     | app.main:lifespan:27 - AIRA application started
+2026-05-04 19:35:06.186 | INFO     | app.main:lifespan:31 - AIRA application shutting down
+2026-05-04 19:35:14.280 | INFO     | app.agents.researcher:<module>:13 - [RESEARCH] FinBERT model loaded
+2026-05-04 19:35:14.783 | INFO     | app.main:lifespan:26 - Database initialized successfully
+2026-05-04 19:35:14.784 | INFO     | app.main:lifespan:27 - AIRA application started
+2026-05-04 19:43:42.304 | INFO     | app.main:lifespan:31 - AIRA application shutting down
+2026-05-04 19:43:50.349 | INFO     | app.agents.researcher:<module>:13 - [RESEARCH] FinBERT model loaded
+2026-05-04 19:43:50.841 | INFO     | app.main:lifespan:26 - Database initialized successfully
+2026-05-04 19:43:50.841 | INFO     | app.main:lifespan:27 - AIRA application started
+2026-05-04 19:45:00.350 | INFO     | app.main:lifespan:31 - AIRA application shutting down
+2026-05-04 19:45:07.407 | INFO     | app.agents.researcher:<module>:13 - [RESEARCH] FinBERT model loaded
+2026-05-04 19:45:07.794 | INFO     | app.main:lifespan:26 - Database initialized successfully
+2026-05-04 19:45:07.794 | INFO     | app.main:lifespan:27 - AIRA application started
+2026-05-04 19:45:07.907 | INFO     | app.main:lifespan:31 - AIRA application shutting down
+2026-05-04 19:45:15.270 | INFO     | app.agents.researcher:<module>:13 - [RESEARCH] FinBERT model loaded
+2026-05-04 19:45:15.691 | INFO     | app.main:lifespan:26 - Database initialized successfully
+2026-05-04 19:45:15.691 | INFO     | app.main:lifespan:27 - AIRA application started
+2026-05-04 19:45:15.797 | INFO     | app.main:lifespan:31 - AIRA application shutting down
+2026-05-04 19:45:22.619 | INFO     | app.agents.researcher:<module>:13 - [RESEARCH] FinBERT model loaded
+2026-05-04 19:45:23.017 | INFO     | app.main:lifespan:26 - Database initialized successfully
+2026-05-04 19:45:23.017 | INFO     | app.main:lifespan:27 - AIRA application started
+2026-05-04 19:45:23.135 | INFO     | app.main:lifespan:31 - AIRA application shutting down
+2026-05-04 19:45:29.995 | INFO     | app.agents.researcher:<module>:13 - [RESEARCH] FinBERT model loaded
+2026-05-04 19:45:30.392 | INFO     | app.main:lifespan:26 - Database initialized successfully
+2026-05-04 19:45:30.392 | INFO     | app.main:lifespan:27 - AIRA application started
+2026-05-04 19:45:30.505 | INFO     | app.main:lifespan:31 - AIRA application shutting down
+2026-05-04 19:45:38.044 | INFO     | app.agents.researcher:<module>:13 - [RESEARCH] FinBERT model loaded
+2026-05-04 19:45:38.483 | INFO     | app.main:lifespan:26 - Database initialized successfully
+2026-05-04 19:45:38.483 | INFO     | app.main:lifespan:27 - AIRA application started
+2026-05-04 19:45:39.416 | INFO     | app.main:lifespan:31 - AIRA application shutting down
+2026-05-04 19:45:46.389 | INFO     | app.agents.researcher:<module>:13 - [RESEARCH] FinBERT model loaded
+2026-05-04 19:45:46.777 | INFO     | app.main:lifespan:26 - Database initialized successfully
+2026-05-04 19:45:46.777 | INFO     | app.main:lifespan:27 - AIRA application started
+2026-05-04 19:45:46.888 | INFO     | app.main:lifespan:31 - AIRA application shutting down
+2026-05-04 19:45:53.845 | INFO     | app.agents.researcher:<module>:13 - [RESEARCH] FinBERT model loaded
+2026-05-04 19:45:54.239 | INFO     | app.main:lifespan:26 - Database initialized successfully
+2026-05-04 19:45:54.239 | INFO     | app.main:lifespan:27 - AIRA application started
+2026-05-04 19:46:37.028 | INFO     | app.main:lifespan:31 - AIRA application shutting down
+2026-05-04 19:46:43.955 | INFO     | app.agents.researcher:<module>:13 - [RESEARCH] FinBERT model loaded
+2026-05-04 19:46:44.346 | INFO     | app.main:lifespan:26 - Database initialized successfully
+2026-05-04 19:46:44.346 | INFO     | app.main:lifespan:27 - AIRA application started
+2026-05-04 19:46:44.455 | INFO     | app.main:lifespan:31 - AIRA application shutting down
+2026-05-04 19:46:51.448 | INFO     | app.agents.researcher:<module>:13 - [RESEARCH] FinBERT model loaded
+2026-05-04 19:46:51.850 | INFO     | app.main:lifespan:26 - Database initialized successfully
+2026-05-04 19:46:51.850 | INFO     | app.main:lifespan:27 - AIRA application started
+2026-05-04 19:46:51.956 | INFO     | app.main:lifespan:31 - AIRA application shutting down
+2026-05-04 19:46:58.749 | INFO     | app.agents.researcher:<module>:13 - [RESEARCH] FinBERT model loaded
+2026-05-04 19:46:59.158 | INFO     | app.main:lifespan:26 - Database initialized successfully
+2026-05-04 19:46:59.158 | INFO     | app.main:lifespan:27 - AIRA application started
+2026-05-04 19:46:59.265 | INFO     | app.main:lifespan:31 - AIRA application shutting down
+2026-05-04 19:47:05.992 | INFO     | app.agents.researcher:<module>:13 - [RESEARCH] FinBERT model loaded
+2026-05-04 19:47:06.408 | INFO     | app.main:lifespan:26 - Database initialized successfully
+2026-05-04 19:47:06.408 | INFO     | app.main:lifespan:27 - AIRA application started
+2026-05-04 19:47:06.522 | INFO     | app.main:lifespan:31 - AIRA application shutting down
+2026-05-04 19:47:13.416 | INFO     | app.agents.researcher:<module>:13 - [RESEARCH] FinBERT model loaded
+2026-05-04 19:47:13.811 | INFO     | app.main:lifespan:26 - Database initialized successfully
+2026-05-04 19:47:13.811 | INFO     | app.main:lifespan:27 - AIRA application started
+2026-05-04 19:47:13.926 | INFO     | app.main:lifespan:31 - AIRA application shutting down
+2026-05-04 19:47:20.806 | INFO     | app.agents.researcher:<module>:13 - [RESEARCH] FinBERT model loaded
+2026-05-04 19:47:21.213 | INFO     | app.main:lifespan:26 - Database initialized successfully
+2026-05-04 19:47:21.217 | INFO     | app.main:lifespan:27 - AIRA application started
+2026-05-04 19:48:23.870 | INFO     | app.main:lifespan:31 - AIRA application shutting down
+2026-05-04 19:48:32.247 | INFO     | app.agents.researcher:<module>:13 - [RESEARCH] FinBERT model loaded
+2026-05-04 19:48:32.798 | INFO     | app.main:lifespan:26 - Database initialized successfully
+2026-05-04 19:48:32.798 | INFO     | app.main:lifespan:27 - AIRA application started
+2026-05-04 19:48:32.906 | INFO     | app.main:lifespan:31 - AIRA application shutting down
+2026-05-04 19:48:41.927 | INFO     | app.agents.researcher:<module>:13 - [RESEARCH] FinBERT model loaded
+2026-05-04 19:48:42.357 | INFO     | app.main:lifespan:26 - Database initialized successfully
+2026-05-04 19:48:42.357 | INFO     | app.main:lifespan:27 - AIRA application started
+2026-05-04 19:48:42.474 | INFO     | app.main:lifespan:31 - AIRA application shutting down
+2026-05-04 19:48:49.714 | INFO     | app.agents.researcher:<module>:13 - [RESEARCH] FinBERT model loaded
+2026-05-04 19:48:50.131 | INFO     | app.main:lifespan:26 - Database initialized successfully
+2026-05-04 19:48:50.131 | INFO     | app.main:lifespan:27 - AIRA application started
+2026-05-04 19:48:50.242 | INFO     | app.main:lifespan:31 - AIRA application shutting down
+2026-05-04 19:48:57.653 | INFO     | app.agents.researcher:<module>:13 - [RESEARCH] FinBERT model loaded
+2026-05-04 19:48:58.047 | INFO     | app.main:lifespan:26 - Database initialized successfully
+2026-05-04 19:48:58.047 | INFO     | app.main:lifespan:27 - AIRA application started
+2026-05-04 19:48:58.149 | INFO     | app.main:lifespan:31 - AIRA application shutting down
+2026-05-04 19:49:05.177 | INFO     | app.agents.researcher:<module>:13 - [RESEARCH] FinBERT model loaded
+2026-05-04 19:49:05.587 | INFO     | app.main:lifespan:26 - Database initialized successfully
+2026-05-04 19:49:05.587 | INFO     | app.main:lifespan:27 - AIRA application started
+2026-05-04 19:49:05.689 | INFO     | app.main:lifespan:31 - AIRA application shutting down
+2026-05-04 19:49:12.554 | INFO     | app.agents.researcher:<module>:13 - [RESEARCH] FinBERT model loaded
+2026-05-04 19:49:12.946 | INFO     | app.main:lifespan:26 - Database initialized successfully
+2026-05-04 19:49:12.946 | INFO     | app.main:lifespan:27 - AIRA application started
+2026-05-04 19:49:13.059 | INFO     | app.main:lifespan:31 - AIRA application shutting down
+2026-05-04 19:49:19.538 | INFO     | app.agents.researcher:<module>:13 - [RESEARCH] FinBERT model loaded
+2026-05-04 19:49:19.926 | INFO     | app.main:lifespan:26 - Database initialized successfully
+2026-05-04 19:49:19.927 | INFO     | app.main:lifespan:27 - AIRA application started
+2026-05-04 19:49:29.412 | INFO     | app.agents.researcher:<module>:13 - [RESEARCH] FinBERT model loaded
+2026-05-04 19:49:29.795 | INFO     | app.main:lifespan:26 - Database initialized successfully
+2026-05-04 19:49:29.795 | INFO     | app.main:lifespan:27 - AIRA application started
+2026-05-04 19:49:41.059 | INFO     | app.agents.researcher:<module>:13 - [RESEARCH] FinBERT model loaded
+2026-05-04 19:49:42.075 | INFO     | app.agents.researcher:gather_research:69 - [RESEARCH] Starting research for AAPL
+2026-05-04 19:49:42.075 | INFO     | app.mcp.tool_router:call_tool:28 - [MCP] → Calling 'finance_api' with params={'ticker': 'AAPL'}
+2026-05-04 19:49:42.075 | INFO     | app.tools.finance_api:get_financial_data:9 - Fetching financial data for AAPL
+2026-05-04 19:49:43.071 | INFO     | app.mcp.tool_router:call_tool:34 - [MCP] ← 'finance_api' completed in 0.997s
+2026-05-04 19:49:43.071 | INFO     | app.agents.researcher:gather_research:75 - [RESEARCH] Financial data fetched via MCP
+2026-05-04 19:49:43.071 | INFO     | app.mcp.tool_router:call_tool:28 - [MCP] → Calling 'news_api' with params={'company': 'Apple Inc.'}
+2026-05-04 19:49:43.071 | INFO     | app.tools.news_api:get_company_news:10 - Fetching news for Apple Inc.
+2026-05-04 19:49:43.922 | INFO     | app.mcp.tool_router:call_tool:34 - [MCP] ← 'news_api' completed in 0.851s
+2026-05-04 19:49:43.923 | INFO     | app.agents.researcher:gather_research:87 - [RESEARCH] Retrieved 5 news articles via MCP
+2026-05-04 19:49:43.923 | INFO     | app.mcp.tool_router:call_tool:28 - [MCP] → Calling 'sec_api' with params={'ticker': 'AAPL'}
+2026-05-04 19:49:43.923 | INFO     | app.mcp.tool_router:call_tool:34 - [MCP] ← 'sec_api' completed in 0.001s
+2026-05-04 19:49:43.923 | INFO     | app.agents.researcher:gather_research:94 - [RESEARCH] SEC filings fetched via MCP
+2026-05-04 19:49:44.234 | INFO     | app.agents.researcher:gather_research:104 - [RESEARCH] Sentiment score: 0.0
+2026-05-04 19:49:49.496 | ERROR    | app.core.middleware:global_exception_handler:9 - Unhandled error: 'NoneType' object is not callable
+Traceback (most recent call last):
+
+  File "C:\Users\Esterad\AppData\Roaming\uv\python\cpython-3.12-windows-x86_64-none\Lib\threading.py", line 1032, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x0000023538306480>
+    └ <Thread(asyncio-portal-23566239b50, started daemon 25856)>
+  File "C:\Users\Esterad\AppData\Roaming\uv\python\cpython-3.12-windows-x86_64-none\Lib\threading.py", line 1075, in _bootstrap_inner
+    self.run()
+    │    └ <function Thread.run at 0x0000023538306160>
+    └ <Thread(asyncio-portal-23566239b50, started daemon 25856)>
+  File "C:\Users\Esterad\AppData\Roaming\uv\python\cpython-3.12-windows-x86_64-none\Lib\threading.py", line 1012, in run
+    self._target(*self._args, **self._kwargs)
+    │    │        │    │        │    └ {}
+    │    │        │    │        └ <Thread(asyncio-portal-23566239b50, started daemon 25856)>
+    │    │        │    └ ()
+    │    │        └ <Thread(asyncio-portal-23566239b50, started daemon 25856)>
+    │    └ <function start_blocking_portal.<locals>.run_blocking_portal at 0x00000235678094E0>
+    └ <Thread(asyncio-portal-23566239b50, started daemon 25856)>
+  File "D:\Projects\Autonomous Investment Research Agent\.venv\Lib\site-packages\anyio\from_thread.py", line 532, in run_blocking_portal
+    run_eventloop(
+    └ <function run at 0x0000023538E4F740>
+  File "D:\Projects\Autonomous Investment Research Agent\.venv\Lib\site-packages\anyio\_core\_eventloop.py", line 77, in run
+    return async_backend.run(func, args, {}, backend_options)
+           │             │   │     │         └ {}
+           │             │   │     └ ()
+           │             │   └ <function start_blocking_portal.<locals>.run_portal at 0x0000023567809440>
+           │             └ <classmethod(<function AsyncIOBackend.run at 0x000002353AA340E0>)>
+           └ <class 'anyio._backends._asyncio.AsyncIOBackend'>
+  File "D:\Projects\Autonomous Investment Research Agent\.venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 2358, in run
+    return runner.run(wrapper())
+           │      │   └ <function start_blocking_portal.<locals>.run_portal at 0x0000023567809620>
+           │      └ <function Runner.run at 0x000002353A948E00>
+           └ <asyncio.runners.Runner object at 0x0000023567817920>
+  File "C:\Users\Esterad\AppData\Roaming\uv\python\cpython-3.12-windows-x86_64-none\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           │    │     │                  └ <Task pending name='anyio.from_thread.start_blocking_portal.<locals>.run_portal' coro=<start_blocking_portal.<locals>.run_por...
+           │    │     └ <function BaseEventLoop.run_until_complete at 0x000002353A93E980>
+           │    └ <ProactorEventLoop running=True closed=False debug=False>
+           └ <asyncio.runners.Runner object at 0x0000023567817920>
+  File "C:\Users\Esterad\AppData\Roaming\uv\python\cpython-3.12-windows-x86_64-none\Lib\asyncio\base_events.py", line 678, in run_until_complete
+    self.run_forever()
+    │    └ <function ProactorEventLoop.run_forever at 0x000002353A9BC040>
+    └ <ProactorEventLoop running=True closed=False debug=False>
+  File "C:\Users\Esterad\AppData\Roaming\uv\python\cpython-3.12-windows-x86_64-none\Lib\asyncio\windows_events.py", line 322, in run_forever
+    super().run_forever()
+  File "C:\Users\Esterad\AppData\Roaming\uv\python\cpython-3.12-windows-x86_64-none\Lib\asyncio\base_events.py", line 645, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x000002353A948720>
+    └ <ProactorEventLoop running=True closed=False debug=False>
+  File "C:\Users\Esterad\AppData\Roaming\uv\python\cpython-3.12-windows-x86_64-none\Lib\asyncio\base_events.py", line 1999, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x000002353A8ECB80>
+    └ <Handle Task.task_wakeup(<Future finished result=False>)>
+  File "C:\Users\Esterad\AppData\Roaming\uv\python\cpython-3.12-windows-x86_64-none\Lib\asyncio\events.py", line 88, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle Task.task_wakeup(<Future finished result=False>)>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle Task.task_wakeup(<Future finished result=False>)>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle Task.task_wakeup(<Future finished result=False>)>
+  File "D:\Projects\Autonomous Investment Research Agent\.venv\Lib\site-packages\anyio\from_thread.py", line 259, in _call_func
+    retval = await retval_or_awaitable
+                   └ <coroutine object FastAPI.__call__ at 0x0000023567689E40>
+  File "D:\Projects\Autonomous Investment Research Agent\.venv\Lib\site-packages\fastapi\applications.py", line 1159, in __call__
+    await super().__call__(scope, receive, send)
+                           │      │        └ <function _TestClientTransport.handle_request.<locals>.send at 0x0000023567809300>
+                           │      └ <function _TestClientTransport.handle_request.<locals>.receive at 0x00000235678093A0>
+                           └ {'type': 'http', 'http_version': '1.1', 'method': 'POST', 'path': '/analyze', 'raw_path': b'/analyze', 'root_path': '', 'sche...
+  File "D:\Projects\Autonomous Investment Research Agent\.venv\Lib\site-packages\starlette\applications.py", line 90, in __call__
+    await self.middleware_stack(scope, receive, send)
+          │    │                │      │        └ <function _TestClientTransport.handle_request.<locals>.send at 0x0000023567809300>
+          │    │                │      └ <function _TestClientTransport.handle_request.<locals>.receive at 0x00000235678093A0>
+          │    │                └ {'type': 'http', 'http_version': '1.1', 'method': 'POST', 'path': '/analyze', 'raw_path': b'/analyze', 'root_path': '', 'sche...
+          │    └ <starlette.middleware.errors.ServerErrorMiddleware object at 0x00000235677E3E30>
+          └ <fastapi.applications.FastAPI object at 0x0000023565151F40>
+> File "D:\Projects\Autonomous Investment Research Agent\.venv\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+          │    │   │      │        └ <function ServerErrorMiddleware.__call__.<locals>._send at 0x0000023567796FC0>
+          │    │   │      └ <function _TestClientTransport.handle_request.<locals>.receive at 0x00000235678093A0>
+          │    │   └ {'type': 'http', 'http_version': '1.1', 'method': 'POST', 'path': '/analyze', 'raw_path': b'/analyze', 'root_path': '', 'sche...
+          │    └ <starlette.middleware.exceptions.ExceptionMiddleware object at 0x000002356620F740>
+          └ <starlette.middleware.errors.ServerErrorMiddleware object at 0x00000235677E3E30>
+  File "D:\Projects\Autonomous Investment Research Agent\.venv\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+          │                            │    │    │     │      │        └ <function ServerErrorMiddleware.__call__.<locals>._send at 0x0000023567796FC0>
+          │                            │    │    │     │      └ <function _TestClientTransport.handle_request.<locals>.receive at 0x00000235678093A0>
+          │                            │    │    │     └ {'type': 'http', 'http_version': '1.1', 'method': 'POST', 'path': '/analyze', 'raw_path': b'/analyze', 'root_path': '', 'sche...
+          │                            │    │    └ <starlette.requests.Request object at 0x00000235677E3DA0>
+          │                            │    └ <fastapi.middleware.asyncexitstack.AsyncExitStackMiddleware object at 0x00000235677E3E00>
+          │                            └ <starlette.middleware.exceptions.ExceptionMiddleware object at 0x000002356620F740>
+          └ <function wrap_app_handling_exceptions at 0x00000235650EDC60>
+  File "D:\Projects\Autonomous Investment Research Agent\.venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "D:\Projects\Autonomous Investment Research Agent\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+          │   │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x0000023567809080>
+          │   │      └ <function _TestClientTransport.handle_request.<locals>.receive at 0x00000235678093A0>
+          │   └ {'type': 'http', 'http_version': '1.1', 'method': 'POST', 'path': '/analyze', 'raw_path': b'/analyze', 'root_path': '', 'sche...
+          └ <fastapi.middleware.asyncexitstack.AsyncExitStackMiddleware object at 0x00000235677E3E00>
+  File "D:\Projects\Autonomous Investment Research Agent\.venv\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+          │    │   │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x0000023567809080>
+          │    │   │      └ <function _TestClientTransport.handle_request.<locals>.receive at 0x00000235678093A0>
+          │    │   └ {'type': 'http', 'http_version': '1.1', 'method': 'POST', 'path': '/analyze', 'raw_path': b'/analyze', 'root_path': '', 'sche...
+          │    └ <fastapi.routing.APIRouter object at 0x00000235639D73B0>
+          └ <fastapi.middleware.asyncexitstack.AsyncExitStackMiddleware object at 0x00000235677E3E00>
+  File "D:\Projects\Autonomous Investment Research Agent\.venv\Lib\site-packages\starlette\routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+          │    │                │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x0000023567809080>
+          │    │                │      └ <function _TestClientTransport.handle_request.<locals>.receive at 0x00000235678093A0>
+          │    │                └ {'type': 'http', 'http_version': '1.1', 'method': 'POST', 'path': '/analyze', 'raw_path': b'/analyze', 'root_path': '', 'sche...
+          │    └ <bound method Router.app of <fastapi.routing.APIRouter object at 0x00000235639D73B0>>
+          └ <fastapi.routing.APIRouter object at 0x00000235639D73B0>
+  File "D:\Projects\Autonomous Investment Research Agent\.venv\Lib\site-packages\starlette\routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+          │     │      │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x0000023567809080>
+          │     │      │      └ <function _TestClientTransport.handle_request.<locals>.receive at 0x00000235678093A0>
+          │     │      └ {'type': 'http', 'http_version': '1.1', 'method': 'POST', 'path': '/analyze', 'raw_path': b'/analyze', 'root_path': '', 'sche...
+          │     └ <function Route.handle at 0x00000235650EF1A0>
+          └ APIRoute(path='/analyze', name='analyze', methods=['POST'])
+  File "D:\Projects\Autonomous Investment Research Agent\.venv\Lib\site-packages\starlette\routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+          │    │   │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x0000023567809080>
+          │    │   │      └ <function _TestClientTransport.handle_request.<locals>.receive at 0x00000235678093A0>
+          │    │   └ {'type': 'http', 'http_version': '1.1', 'method': 'POST', 'path': '/analyze', 'raw_path': b'/analyze', 'root_path': '', 'sche...
+          │    └ <function request_response.<locals>.app at 0x00000235662149A0>
+          └ APIRoute(path='/analyze', name='analyze', methods=['POST'])
+  File "D:\Projects\Autonomous Investment Research Agent\.venv\Lib\site-packages\fastapi\routing.py", line 134, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+          │                            │    │        │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x0000023567809080>
+          │                            │    │        │      └ <function _TestClientTransport.handle_request.<locals>.receive at 0x00000235678093A0>
+          │                            │    │        └ {'type': 'http', 'http_version': '1.1', 'method': 'POST', 'path': '/analyze', 'raw_path': b'/analyze', 'root_path': '', 'sche...
+          │                            │    └ <starlette.requests.Request object at 0x0000023567814080>
+          │                            └ <function request_response.<locals>.app.<locals>.app at 0x0000023567808F40>
+          └ <function wrap_app_handling_exceptions at 0x00000235650EDC60>
+  File "D:\Projects\Autonomous Investment Research Agent\.venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "D:\Projects\Autonomous Investment Research Agent\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+          │   │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x0000023567808D60>
+          │   │      └ <function _TestClientTransport.handle_request.<locals>.receive at 0x00000235678093A0>
+          │   └ {'type': 'http', 'http_version': '1.1', 'method': 'POST', 'path': '/analyze', 'raw_path': b'/analyze', 'root_path': '', 'sche...
+          └ <function request_response.<locals>.app.<locals>.app at 0x0000023567808F40>
+  File "D:\Projects\Autonomous Investment Research Agent\.venv\Lib\site-packages\fastapi\routing.py", line 120, in app
+    response = await f(request)
+                     │ └ <starlette.requests.Request object at 0x0000023567814080>
+                     └ <function get_request_handler.<locals>.app at 0x0000023566214A40>
+  File "D:\Projects\Autonomous Investment Research Agent\.venv\Lib\site-packages\fastapi\routing.py", line 457, in app
+    solved_result = await solve_dependencies(
+                          └ <function solve_dependencies at 0x00000235650D2D40>
+  File "D:\Projects\Autonomous Investment Research Agent\.venv\Lib\site-packages\fastapi\dependencies\utils.py", line 672, in solve_dependencies
+    solved = await _solve_generator(
+                   └ <function _solve_generator at 0x00000235650D2CA0>
+  File "D:\Projects\Autonomous Investment Research Agent\.venv\Lib\site-packages\fastapi\dependencies\utils.py", line 586, in _solve_generator
+    return await stack.enter_async_context(cm)
+                 │     │                   └ <contextlib._AsyncGeneratorContextManager object at 0x0000023567816540>
+                 │     └ <function AsyncExitStack.enter_async_context at 0x0000023537EA9E40>
+                 └ <contextlib.AsyncExitStack object at 0x0000023567816F60>
+  File "C:\Users\Esterad\AppData\Roaming\uv\python\cpython-3.12-windows-x86_64-none\Lib\contextlib.py", line 659, in enter_async_context
+    result = await _enter(cm)
+                   │      └ <contextlib._AsyncGeneratorContextManager object at 0x0000023567816540>
+                   └ <function _AsyncGeneratorContextManager.__aenter__ at 0x0000023537EA8900>
+  File "C:\Users\Esterad\AppData\Roaming\uv\python\cpython-3.12-windows-x86_64-none\Lib\contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+                       │    └ <async_generator object contextmanager_in_threadpool at 0x00000235677EE790>
+                       └ <contextlib._AsyncGeneratorContextManager object at 0x0000023567816540>
+  File "D:\Projects\Autonomous Investment Research Agent\.venv\Lib\site-packages\fastapi\concurrency.py", line 37, in contextmanager_in_threadpool
+    raise e
+  File "D:\Projects\Autonomous Investment Research Agent\.venv\Lib\site-packages\fastapi\concurrency.py", line 29, in contextmanager_in_threadpool
+    yield await run_in_threadpool(cm.__enter__)
+                │                 │  └ <function _GeneratorContextManager.__enter__ at 0x0000023537EA85E0>
+                │                 └ <contextlib._GeneratorContextManager object at 0x0000023567816030>
+                └ <function run_in_threadpool at 0x0000023564F345E0>
+  File "D:\Projects\Autonomous Investment Research Agent\.venv\Lib\site-packages\starlette\concurrency.py", line 32, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+                 │     │         │        └ functools.partial(<bound method _GeneratorContextManager.__enter__ of <contextlib._GeneratorContextManager object at 0x000002...
+                 │     │         └ <function run_sync at 0x0000023538E7C7C0>
+                 │     └ <module 'anyio.to_thread' from 'D:\\Projects\\Autonomous Investment Research Agent\\.venv\\Lib\\site-packages\\anyio\\to_thre...
+                 └ <module 'anyio' from 'D:\\Projects\\Autonomous Investment Research Agent\\.venv\\Lib\\site-packages\\anyio\\__init__.py'>
+  File "D:\Projects\Autonomous Investment Research Agent\.venv\Lib\site-packages\anyio\to_thread.py", line 63, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+                 └ <function get_async_backend at 0x0000023538E7C360>
+  File "D:\Projects\Autonomous Investment Research Agent\.venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 2518, in run_sync_in_worker_thread
+    return await future
+                 └ <Future finished exception=TypeError("'NoneType' object is not callable")>
+  File "D:\Projects\Autonomous Investment Research Agent\.venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 1002, in run
+    result = context.run(func, *args)
+  File "C:\Users\Esterad\AppData\Roaming\uv\python\cpython-3.12-windows-x86_64-none\Lib\contextlib.py", line 137, in __enter__
+    return next(self.gen)
+                │    └ <generator object get_db at 0x0000023538F21E50>
+                └ <contextlib._GeneratorContextManager object at 0x0000023567816030>
+
+  File "D:\Projects\Autonomous Investment Research Agent\app\api\routes.py", line 28, in get_db
+    db = db_module.SessionLocal()
+         │         └ None
+         └ <module 'app.core.database' from 'D:\\Projects\\Autonomous Investment Research Agent\\app\\core\\database.py'>
+
+TypeError: 'NoneType' object is not callable
+2026-05-04 19:49:49.524 | ERROR    | app.core.middleware:global_exception_handler:9 - Unhandled error: 'NoneType' object is not callable
+Traceback (most recent call last):
+
+  File "C:\Users\Esterad\AppData\Roaming\uv\python\cpython-3.12-windows-x86_64-none\Lib\threading.py", line 1032, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x0000023538306480>
+    └ <Thread(asyncio-portal-235679dc170, started daemon 22416)>
+  File "C:\Users\Esterad\AppData\Roaming\uv\python\cpython-3.12-windows-x86_64-none\Lib\threading.py", line 1075, in _bootstrap_inner
+    self.run()
+    │    └ <function Thread.run at 0x0000023538306160>
+    └ <Thread(asyncio-portal-235679dc170, started daemon 22416)>
+  File "C:\Users\Esterad\AppData\Roaming\uv\python\cpython-3.12-windows-x86_64-none\Lib\threading.py", line 1012, in run
+    self._target(*self._args, **self._kwargs)
+    │    │        │    │        │    └ {}
+    │    │        │    │        └ <Thread(asyncio-portal-235679dc170, started daemon 22416)>
+    │    │        │    └ ()
+    │    │        └ <Thread(asyncio-portal-235679dc170, started daemon 22416)>
+    │    └ <function start_blocking_portal.<locals>.run_blocking_portal at 0x0000023567808B80>
+    └ <Thread(asyncio-portal-235679dc170, started daemon 22416)>
+  File "D:\Projects\Autonomous Investment Research Agent\.venv\Lib\site-packages\anyio\from_thread.py", line 532, in run_blocking_portal
+    run_eventloop(
+    └ <function run at 0x0000023538E4F740>
+  File "D:\Projects\Autonomous Investment Research Agent\.venv\Lib\site-packages\anyio\_core\_eventloop.py", line 77, in run
+    return async_backend.run(func, args, {}, backend_options)
+           │             │   │     │         └ {}
+           │             │   │     └ ()
+           │             │   └ <function start_blocking_portal.<locals>.run_portal at 0x0000023567809B20>
+           │             └ <classmethod(<function AsyncIOBackend.run at 0x000002353AA340E0>)>
+           └ <class 'anyio._backends._asyncio.AsyncIOBackend'>
+  File "D:\Projects\Autonomous Investment Research Agent\.venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 2358, in run
+    return runner.run(wrapper())
+           │      │   └ <function start_blocking_portal.<locals>.run_portal at 0x0000023567980F40>
+           │      └ <function Runner.run at 0x000002353A948E00>
+           └ <asyncio.runners.Runner object at 0x0000023567817FE0>
+  File "C:\Users\Esterad\AppData\Roaming\uv\python\cpython-3.12-windows-x86_64-none\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           │    │     │                  └ <Task pending name='anyio.from_thread.start_blocking_portal.<locals>.run_portal' coro=<start_blocking_portal.<locals>.run_por...
+           │    │     └ <function BaseEventLoop.run_until_complete at 0x000002353A93E980>
+           │    └ <ProactorEventLoop running=True closed=False debug=False>
+           └ <asyncio.runners.Runner object at 0x0000023567817FE0>
+  File "C:\Users\Esterad\AppData\Roaming\uv\python\cpython-3.12-windows-x86_64-none\Lib\asyncio\base_events.py", line 678, in run_until_complete
+    self.run_forever()
+    │    └ <function ProactorEventLoop.run_forever at 0x000002353A9BC040>
+    └ <ProactorEventLoop running=True closed=False debug=False>
+  File "C:\Users\Esterad\AppData\Roaming\uv\python\cpython-3.12-windows-x86_64-none\Lib\asyncio\windows_events.py", line 322, in run_forever
+    super().run_forever()
+  File "C:\Users\Esterad\AppData\Roaming\uv\python\cpython-3.12-windows-x86_64-none\Lib\asyncio\base_events.py", line 645, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x000002353A948720>
+    └ <ProactorEventLoop running=True closed=False debug=False>
+  File "C:\Users\Esterad\AppData\Roaming\uv\python\cpython-3.12-windows-x86_64-none\Lib\asyncio\base_events.py", line 1999, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x000002353A8ECB80>
+    └ <Handle Task.task_wakeup(<Future finished result=False>)>
+  File "C:\Users\Esterad\AppData\Roaming\uv\python\cpython-3.12-windows-x86_64-none\Lib\asyncio\events.py", line 88, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle Task.task_wakeup(<Future finished result=False>)>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle Task.task_wakeup(<Future finished result=False>)>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle Task.task_wakeup(<Future finished result=False>)>
+  File "D:\Projects\Autonomous Investment Research Agent\.venv\Lib\site-packages\anyio\from_thread.py", line 259, in _call_func
+    retval = await retval_or_awaitable
+                   └ <coroutine object FastAPI.__call__ at 0x00000235678813F0>
+  File "D:\Projects\Autonomous Investment Research Agent\.venv\Lib\site-packages\fastapi\applications.py", line 1159, in __call__
+    await super().__call__(scope, receive, send)
+                           │      │        └ <function _TestClientTransport.handle_request.<locals>.send at 0x0000023567809800>
+                           │      └ <function _TestClientTransport.handle_request.<locals>.receive at 0x0000023567809760>
+                           └ {'type': 'http', 'http_version': '1.1', 'method': 'GET', 'path': '/status/invalid-id', 'raw_path': b'/status/invalid-id', 'ro...
+  File "D:\Projects\Autonomous Investment Research Agent\.venv\Lib\site-packages\starlette\applications.py", line 90, in __call__
+    await self.middleware_stack(scope, receive, send)
+          │    │                │      │        └ <function _TestClientTransport.handle_request.<locals>.send at 0x0000023567809800>
+          │    │                │      └ <function _TestClientTransport.handle_request.<locals>.receive at 0x0000023567809760>
+          │    │                └ {'type': 'http', 'http_version': '1.1', 'method': 'GET', 'path': '/status/invalid-id', 'raw_path': b'/status/invalid-id', 'ro...
+          │    └ <starlette.middleware.errors.ServerErrorMiddleware object at 0x00000235677E3E30>
+          └ <fastapi.applications.FastAPI object at 0x0000023565151F40>
+> File "D:\Projects\Autonomous Investment Research Agent\.venv\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+          │    │   │      │        └ <function ServerErrorMiddleware.__call__.<locals>._send at 0x00000235679811C0>
+          │    │   │      └ <function _TestClientTransport.handle_request.<locals>.receive at 0x0000023567809760>
+          │    │   └ {'type': 'http', 'http_version': '1.1', 'method': 'GET', 'path': '/status/invalid-id', 'raw_path': b'/status/invalid-id', 'ro...
+          │    └ <starlette.middleware.exceptions.ExceptionMiddleware object at 0x000002356620F740>
+          └ <starlette.middleware.errors.ServerErrorMiddleware object at 0x00000235677E3E30>
+  File "D:\Projects\Autonomous Investment Research Agent\.venv\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+          │                            │    │    │     │      │        └ <function ServerErrorMiddleware.__call__.<locals>._send at 0x00000235679811C0>
+          │                            │    │    │     │      └ <function _TestClientTransport.handle_request.<locals>.receive at 0x0000023567809760>
+          │                            │    │    │     └ {'type': 'http', 'http_version': '1.1', 'method': 'GET', 'path': '/status/invalid-id', 'raw_path': b'/status/invalid-id', 'ro...
+          │                            │    │    └ <starlette.requests.Request object at 0x00000235679DC5F0>
+          │                            │    └ <fastapi.middleware.asyncexitstack.AsyncExitStackMiddleware object at 0x00000235677E3E00>
+          │                            └ <starlette.middleware.exceptions.ExceptionMiddleware object at 0x000002356620F740>
+          └ <function wrap_app_handling_exceptions at 0x00000235650EDC60>
+  File "D:\Projects\Autonomous Investment Research Agent\.venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "D:\Projects\Autonomous Investment Research Agent\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+          │   │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x0000023567981300>
+          │   │      └ <function _TestClientTransport.handle_request.<locals>.receive at 0x0000023567809760>
+          │   └ {'type': 'http', 'http_version': '1.1', 'method': 'GET', 'path': '/status/invalid-id', 'raw_path': b'/status/invalid-id', 'ro...
+          └ <fastapi.middleware.asyncexitstack.AsyncExitStackMiddleware object at 0x00000235677E3E00>
+  File "D:\Projects\Autonomous Investment Research Agent\.venv\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+          │    │   │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x0000023567981300>
+          │    │   │      └ <function _TestClientTransport.handle_request.<locals>.receive at 0x0000023567809760>
+          │    │   └ {'type': 'http', 'http_version': '1.1', 'method': 'GET', 'path': '/status/invalid-id', 'raw_path': b'/status/invalid-id', 'ro...
+          │    └ <fastapi.routing.APIRouter object at 0x00000235639D73B0>
+          └ <fastapi.middleware.asyncexitstack.AsyncExitStackMiddleware object at 0x00000235677E3E00>
+  File "D:\Projects\Autonomous Investment Research Agent\.venv\Lib\site-packages\starlette\routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+          │    │                │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x0000023567981300>
+          │    │                │      └ <function _TestClientTransport.handle_request.<locals>.receive at 0x0000023567809760>
+          │    │                └ {'type': 'http', 'http_version': '1.1', 'method': 'GET', 'path': '/status/invalid-id', 'raw_path': b'/status/invalid-id', 'ro...
+          │    └ <bound method Router.app of <fastapi.routing.APIRouter object at 0x00000235639D73B0>>
+          └ <fastapi.routing.APIRouter object at 0x00000235639D73B0>
+  File "D:\Projects\Autonomous Investment Research Agent\.venv\Lib\site-packages\starlette\routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+          │     │      │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x0000023567981300>
+          │     │      │      └ <function _TestClientTransport.handle_request.<locals>.receive at 0x0000023567809760>
+          │     │      └ {'type': 'http', 'http_version': '1.1', 'method': 'GET', 'path': '/status/invalid-id', 'raw_path': b'/status/invalid-id', 'ro...
+          │     └ <function Route.handle at 0x00000235650EF1A0>
+          └ APIRoute(path='/status/{job_id}', name='get_status', methods=['GET'])
+  File "D:\Projects\Autonomous Investment Research Agent\.venv\Lib\site-packages\starlette\routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+          │    │   │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x0000023567981300>
+          │    │   │      └ <function _TestClientTransport.handle_request.<locals>.receive at 0x0000023567809760>
+          │    │   └ {'type': 'http', 'http_version': '1.1', 'method': 'GET', 'path': '/status/invalid-id', 'raw_path': b'/status/invalid-id', 'ro...
+          │    └ <function request_response.<locals>.app at 0x0000023566214AE0>
+          └ APIRoute(path='/status/{job_id}', name='get_status', methods=['GET'])
+  File "D:\Projects\Autonomous Investment Research Agent\.venv\Lib\site-packages\fastapi\routing.py", line 134, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+          │                            │    │        │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x0000023567981300>
+          │                            │    │        │      └ <function _TestClientTransport.handle_request.<locals>.receive at 0x0000023567809760>
+          │                            │    │        └ {'type': 'http', 'http_version': '1.1', 'method': 'GET', 'path': '/status/invalid-id', 'raw_path': b'/status/invalid-id', 'ro...
+          │                            │    └ <starlette.requests.Request object at 0x00000235679DC7D0>
+          │                            └ <function request_response.<locals>.app.<locals>.app at 0x00000235679813A0>
+          └ <function wrap_app_handling_exceptions at 0x00000235650EDC60>
+  File "D:\Projects\Autonomous Investment Research Agent\.venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "D:\Projects\Autonomous Investment Research Agent\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+          │   │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x00000235679814E0>
+          │   │      └ <function _TestClientTransport.handle_request.<locals>.receive at 0x0000023567809760>
+          │   └ {'type': 'http', 'http_version': '1.1', 'method': 'GET', 'path': '/status/invalid-id', 'raw_path': b'/status/invalid-id', 'ro...
+          └ <function request_response.<locals>.app.<locals>.app at 0x00000235679813A0>
+  File "D:\Projects\Autonomous Investment Research Agent\.venv\Lib\site-packages\fastapi\routing.py", line 120, in app
+    response = await f(request)
+                     │ └ <starlette.requests.Request object at 0x00000235679DC7D0>
+                     └ <function get_request_handler.<locals>.app at 0x0000023566214B80>
+  File "D:\Projects\Autonomous Investment Research Agent\.venv\Lib\site-packages\fastapi\routing.py", line 457, in app
+    solved_result = await solve_dependencies(
+                          └ <function solve_dependencies at 0x00000235650D2D40>
+  File "D:\Projects\Autonomous Investment Research Agent\.venv\Lib\site-packages\fastapi\dependencies\utils.py", line 672, in solve_dependencies
+    solved = await _solve_generator(
+                   └ <function _solve_generator at 0x00000235650D2CA0>
+  File "D:\Projects\Autonomous Investment Research Agent\.venv\Lib\site-packages\fastapi\dependencies\utils.py", line 586, in _solve_generator
+    return await stack.enter_async_context(cm)
+                 │     │                   └ <contextlib._AsyncGeneratorContextManager object at 0x00000235679DC2F0>
+                 │     └ <function AsyncExitStack.enter_async_context at 0x0000023537EA9E40>
+                 └ <contextlib.AsyncExitStack object at 0x00000235679DC920>
+  File "C:\Users\Esterad\AppData\Roaming\uv\python\cpython-3.12-windows-x86_64-none\Lib\contextlib.py", line 659, in enter_async_context
+    result = await _enter(cm)
+                   │      └ <contextlib._AsyncGeneratorContextManager object at 0x00000235679DC2F0>
+                   └ <function _AsyncGeneratorContextManager.__aenter__ at 0x0000023537EA8900>
+  File "C:\Users\Esterad\AppData\Roaming\uv\python\cpython-3.12-windows-x86_64-none\Lib\contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+                       │    └ <async_generator object contextmanager_in_threadpool at 0x00000235677EF120>
+                       └ <contextlib._AsyncGeneratorContextManager object at 0x00000235679DC2F0>
+  File "D:\Projects\Autonomous Investment Research Agent\.venv\Lib\site-packages\fastapi\concurrency.py", line 37, in contextmanager_in_threadpool
+    raise e
+  File "D:\Projects\Autonomous Investment Research Agent\.venv\Lib\site-packages\fastapi\concurrency.py", line 29, in contextmanager_in_threadpool
+    yield await run_in_threadpool(cm.__enter__)
+                │                 │  └ <function _GeneratorContextManager.__enter__ at 0x0000023537EA85E0>
+                │                 └ <contextlib._GeneratorContextManager object at 0x00000235679DC2C0>
+                └ <function run_in_threadpool at 0x0000023564F345E0>
+  File "D:\Projects\Autonomous Investment Research Agent\.venv\Lib\site-packages\starlette\concurrency.py", line 32, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+                 │     │         │        └ functools.partial(<bound method _GeneratorContextManager.__enter__ of <contextlib._GeneratorContextManager object at 0x000002...
+                 │     │         └ <function run_sync at 0x0000023538E7C7C0>
+                 │     └ <module 'anyio.to_thread' from 'D:\\Projects\\Autonomous Investment Research Agent\\.venv\\Lib\\site-packages\\anyio\\to_thre...
+                 └ <module 'anyio' from 'D:\\Projects\\Autonomous Investment Research Agent\\.venv\\Lib\\site-packages\\anyio\\__init__.py'>
+  File "D:\Projects\Autonomous Investment Research Agent\.venv\Lib\site-packages\anyio\to_thread.py", line 63, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+                 └ <function get_async_backend at 0x0000023538E7C360>
+  File "D:\Projects\Autonomous Investment Research Agent\.venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 2518, in run_sync_in_worker_thread
+    return await future
+                 └ <Future finished exception=TypeError("'NoneType' object is not callable")>
+  File "D:\Projects\Autonomous Investment Research Agent\.venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 1002, in run
+    result = context.run(func, *args)
+  File "C:\Users\Esterad\AppData\Roaming\uv\python\cpython-3.12-windows-x86_64-none\Lib\contextlib.py", line 137, in __enter__
+    return next(self.gen)
+                │    └ <generator object get_db at 0x00000235679ACFB0>
+                └ <contextlib._GeneratorContextManager object at 0x00000235679DC2C0>
+
+  File "D:\Projects\Autonomous Investment Research Agent\app\api\routes.py", line 28, in get_db
+    db = db_module.SessionLocal()
+         │         └ None
+         └ <module 'app.core.database' from 'D:\\Projects\\Autonomous Investment Research Agent\\app\\core\\database.py'>
+
+TypeError: 'NoneType' object is not callable
+2026-05-04 19:49:49.544 | INFO     | app.services.analysis_service:run_full_analysis:15 - [ANALYSIS] Starting analysis for AAPL
+2026-05-04 19:49:49.544 | INFO     | app.services.analysis_service:run_full_analysis:25 - [ANALYSIS] Research plan created
+2026-05-04 19:49:49.545 | INFO     | app.agents.researcher:gather_research:69 - [RESEARCH] Starting research for AAPL
+2026-05-04 19:49:49.545 | INFO     | app.mcp.tool_router:call_tool:28 - [MCP] → Calling 'finance_api' with params={'ticker': 'AAPL'}
+2026-05-04 19:49:49.545 | INFO     | app.tools.finance_api:get_financial_data:9 - Fetching financial data for AAPL
+2026-05-04 19:49:49.920 | INFO     | app.mcp.tool_router:call_tool:34 - [MCP] ← 'finance_api' completed in 0.376s
+2026-05-04 19:49:49.920 | INFO     | app.agents.researcher:gather_research:75 - [RESEARCH] Financial data fetched via MCP
+2026-05-04 19:49:49.920 | INFO     | app.mcp.tool_router:call_tool:28 - [MCP] → Calling 'news_api' with params={'company': 'Apple Inc.'}
+2026-05-04 19:49:49.920 | INFO     | app.tools.news_api:get_company_news:10 - Fetching news for Apple Inc.
+2026-05-04 19:49:50.469 | INFO     | app.mcp.tool_router:call_tool:34 - [MCP] ← 'news_api' completed in 0.549s
+2026-05-04 19:49:50.469 | INFO     | app.agents.researcher:gather_research:87 - [RESEARCH] Retrieved 5 news articles via MCP
+2026-05-04 19:49:50.478 | INFO     | app.mcp.tool_router:call_tool:28 - [MCP] → Calling 'sec_api' with params={'ticker': 'AAPL'}
+2026-05-04 19:49:50.478 | INFO     | app.mcp.tool_router:call_tool:34 - [MCP] ← 'sec_api' completed in 0.0s
+2026-05-04 19:49:50.478 | INFO     | app.agents.researcher:gather_research:94 - [RESEARCH] SEC filings fetched via MCP
+2026-05-04 19:49:50.725 | INFO     | app.agents.researcher:gather_research:104 - [RESEARCH] Sentiment score: 0.0
+2026-05-04 19:49:50.726 | INFO     | app.services.analysis_service:run_full_analysis:28 - [ANALYSIS] Research gathered
+2026-05-04 19:49:52.892 | INFO     | app.services.analysis_service:run_full_analysis:31 - [ANALYSIS] Synthesis complete
+2026-05-04 19:49:52.892 | INFO     | app.services.analysis_service:run_full_analysis:34 - [ANALYSIS] Reflection complete
+2026-05-04 19:49:52.892 | INFO     | app.services.analysis_service:run_full_analysis:57 - [CACHE] Stored result for AAPL
+2026-05-04 19:49:52.892 | INFO     | app.services.analysis_service:run_full_analysis:59 - [ANALYSIS] Completed for AAPL

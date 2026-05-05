@@ -37,17 +37,27 @@ def run_full_analysis(ticker: str):
         trend = analyze_trend(price_series)
         final_result["trend"] = trend
 
+        if final_result.get("data_quality", 1) < 0.4:
+            final_result["warnings"] = ["Low data reliability — interpret results cautiously"]
+
         final_result["steps"] = {
-            "plan": str(plan),
-            "research_summary": f"Collected financials, news, filings for {ticker}",
-            "synthesis_reasoning": final_result.get("reasoning", ""),
-            "reflection_notes": final_result.get("reflection_notes", [])
+            "plan": plan,
+            "research_summary": {
+                "news_count": len(research.get("news", [])),
+                "has_financials": bool(research.get("financials")),
+                "has_filings": bool(research.get("filings"))
+            },
+            "synthesis_reasoning": final_result.get("reasoning", {}),
+            "reflection_notes": final_result.get("reflection_notes", []),
+            "confidence": final_result.get("confidence"),
+            "uncertainty": final_result.get("uncertainty")
         }
 
         set_cache(cache_key, final_result)
         logger.info(f"[CACHE] Stored result for {ticker}")
 
         logger.info(f"[ANALYSIS] Completed for {ticker}")
+
         return final_result
 
     except Exception as e:
