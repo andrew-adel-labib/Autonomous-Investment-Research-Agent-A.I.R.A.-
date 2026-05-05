@@ -368,7 +368,6 @@ Prometheus metrics are embedded from day one, not bolted on after.
 
 ## ⚖️ Trade-offs & Known Limitations
 
-> We value clarity and judgment over completeness. Every decision below was intentional.
 
 ### Trade-offs
 
